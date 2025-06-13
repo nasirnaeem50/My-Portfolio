@@ -5,7 +5,7 @@ const getTechnologies = (projectType) => {
   const techMap = {
     ecommerce: [...baseTech, 'Tailwind CSS', 'Context API'],
     Resume: [...baseTech, 'Tailwind CSS', 'Context Api'],
-    dashboard: [...baseTech, 'Material UI', 'Redux'],
+    portfolio: [...baseTech, 'Tailwind CSS', 'Framer motion'],
     api: [...baseTech, 'REST API', 'Axios'],
     auth: [...baseTech, 'Firebase Auth', 'JWT'],
     animation: [...baseTech, 'Framer Motion', 'Three.js']
@@ -44,13 +44,13 @@ export const projects = [
     type: 'Resume'
   },
   {
-    title: 'Weather App',
-    description: 'Weather data with forecasts.',
-    image: 'https://images.unsplash.com/photo-1601134467661-3d775b999c8b',
-    technologies: [...getTechnologies('api'), 'Chart.js'], // Combined with extra tech
-    githubUrl: 'https://github.com/yourusername/weather-app',
-    liveUrl: 'https://weather-app-demo.com',
-    type: 'api'
+    title: 'My Portfolio',
+    description: 'Modern React portfolio to present my work and experience.',
+    image: '/images/portfolio.PNG',
+    technologies: [...getTechnologies('portfolio')], // Combined with extra tech
+    githubUrl: 'https://github.com/nasirnaeem50/My-Portfolio.git',
+    liveUrl: 'https://my-portfolio-three-bay-62.vercel.app/',
+    type: 'Portfolio'
   }
 ];
 
