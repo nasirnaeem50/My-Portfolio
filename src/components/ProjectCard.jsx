@@ -66,6 +66,34 @@ export default function ProjectCard({ project, index }) {
           </div>
         </div>
         
+        {/* Mobile buttons - always visible on mobile */}
+        <div className="md:hidden absolute bottom-3 right-3 flex space-x-2">
+          {project.githubUrl && (
+            <a 
+              href={project.githubUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white/90 text-gray-900 p-2 rounded-full hover:bg-white transition-all duration-300 hover:-translate-y-1 shadow-md"
+              aria-label="GitHub"
+              title="View on GitHub"
+            >
+              <FiGithub className="w-5 h-5" />
+            </a>
+          )}
+          {project.liveUrl && (
+            <a 
+              href={project.liveUrl} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-white/90 text-gray-900 p-2 rounded-full hover:bg-white transition-all duration-300 hover:-translate-y-1 shadow-md"
+              aria-label="Live Demo"
+              title="View Live Demo"
+            >
+              <FiExternalLink className="w-5 h-5" />
+            </a>
+          )}
+        </div>
+        
         {/* Featured badge */}
         {project.featured && (
           <div className="absolute top-3 left-3 bg-yellow-400 text-yellow-900 text-xs font-bold px-2 py-1 rounded-md shadow-sm">
