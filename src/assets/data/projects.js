@@ -6,7 +6,7 @@ const getTechnologies = (projectType) => {
     ecommerce: [...baseTech, 'Tailwind CSS', 'Context API'],
     Resume: [...baseTech, 'Tailwind CSS', 'Context Api'],
     portfolio: [...baseTech, 'Tailwind CSS', 'Framer motion'],
-    api: [...baseTech, 'REST API', 'Axios'],
+    foodvilla: [...baseTech, 'Tailwind CSS', 'Context Api'],
     auth: [...baseTech, 'Firebase Auth', 'JWT'],
     animation: [...baseTech, 'Framer Motion', 'Three.js']
   };
@@ -51,6 +51,15 @@ export const projects = [
     githubUrl: 'https://github.com/nasirnaeem50/My-Portfolio.git',
     liveUrl: 'https://my-portfolio-three-bay-62.vercel.app/',
     type: 'Portfolio'
+  },
+  {
+    title: 'Food Villa',
+    description: 'A React-based food delivery management system.',
+    image: '/images/food.PNG',
+    technologies: [...getTechnologies('foodvilla')], // Combined with extra tech
+    githubUrl: 'https://github.com/nasirnaeem50/Food-Villa-Project.git',
+    liveUrl: 'https://food-villa-project.vercel.app/',
+    type: 'Food App'
   }
 ];
 
